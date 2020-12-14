@@ -1,0 +1,5 @@
+<messaging:emailTemplate subject="[AUTOREPLY]: Thankyou for Your Email" recipientType="Contact" relatedToType="Case">
+    <messaging:htmlEmailBody>
+        <c:EmailAutoReply_VC ToID="{!RelatedTo.ID}" />
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,10 @@
+<apex:component controller="EmailAutoReplySetTemplate_v2" access="global">
+    <apex:attribute name="ToID" type="ID" description="the lead owner ID" assignTo="{!caseID}"/>
+    
+    <!--  Logic-nya langsung di contoller-nya  -->
+    <apex:outputText value="{!EmailTemplate}" escape="false" />
+    
+    <!--  Jika di contollernya hanya query  -->
+    <!--<apex:outputText value="{!emailTemplate.Email_Body__c}" escape="false" /> -->
+    
+</apex:component>
